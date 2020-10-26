@@ -1,0 +1,142 @@
+.hero {
+    height: 550px;
+    background-color: rgb(142, 142, 194);
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 900px;
+    font-size: 1em;
+    padding: 1em;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0), 0 0 50px rgb(0, 0, 0);
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    line-height: 1.25;
+}
+
+.spacer {
+    height: 8px;
+    width: 60px;
+    border-radius: 4px;
+    background-color: rgb(172, 172, 172);
+
+    margin: 3em auto 2.5em auto;
+}
+
+.card {
+    margin: 1.5em auto 0 auto;
+    padding: 1.5em;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+    max-width: 375px;
+}
+
+.card h3 {
+    margin-bottom: 0.5em;
+
+}
+
+.card ul {
+    padding-left: 1.2em;
+    list-style-type: square;
+}
+
+.icon-container {
+    width: 160px;
+    height: 160px;
+    padding: 1.2em;
+    margin: 1em auto;
+    border-radius: 50%;
+
+    background-color: rgb(196, 196, 196);
+    color: rgb(64, 64, 64);
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.professional-icon {
+    font-size: 3.5em;
+    /* color: rgb(128, 128, 128); */
+    color: white;
+    margin: 0.5rem 0 1rem 0;
+}
+
+#county-list {
+    font-size: 1.2em; 
+    text-align: center; 
+    margin: 1em auto;
+    padding: 0 1rem;
+    max-width: 600px;
+}
+
+#county-list > li {
+    display: inline-block;
+}
+
+#county-list > li::before {
+    content: "• ";
+}
+
+#bay-area-map {
+    height: 300px;
+    background-image: url('../img/bay-area-map.png'); /* this image used the map-marker-alt icon from Font Awesome, licensed under the Creative Commons Attribution 4.0 International license (see https://fontawesome.com/license) */
+    background-position: center; 
+    background-size: cover; 
+    margin: 0 auto;
+}
+
+.lg-only-block {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .hero-text {
+        font-size: 1.5em;
+    }
+
+    #bay-area-map {
+        height: 400px; 
+    }
+}
+
+@media (min-width: 768px) { 
+    .hero-text {
+        font-size: 2em;
+    }
+
+    .card {
+        margin: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .icon-container {
+        margin: 1em;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-only-block {
+        display: block;
+    }
+
+    #bay-area-map {
+        max-width: 900px; 
+    }
+}
