@@ -162,6 +162,10 @@ main {
     padding-top: 79px;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 @media (min-width: 576px) {
     h2 {
         font-size: 2em;

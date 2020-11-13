@@ -1,0 +1,30 @@
+#bay-area-map {
+    height: 300px;
+    width: 100%;
+    background-image: url('../img/bay-area-map.png'); /* this image used the map-marker-alt icon from Font Awesome, licensed under the Creative Commons Attribution 4.0 International license (see https://fontawesome.com/license) */
+    background-position: center; 
+    background-size: cover; 
+}
+
+#contact-list {
+    font-size: 1.2em; 
+    max-width: 600px;
+}
+
+#contact-list > li {
+    margin: 0.5em auto;
+}
+
+@media (min-width: 768px) { 
+    #contact-info {
+        padding: 0 1em;
+    }
+
+    .flex-container-responsive {
+        flex-direction: row-reverse;
+    }
+
+    .flex-container-responsive > * {
+        flex: 1;
+    }
+}
